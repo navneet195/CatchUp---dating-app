@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GetStartedVC" customModule="Blinky" customModuleProvider="target">
+            <connections>
+                <outlet property="getingStartedButton" destination="H5h-Zs-N9F" id="WvS-1d-5di"/>
+                <outlet property="sliderContainerView" destination="em4-sy-bO0" id="ltl-Ld-Cvq"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Gd6-QD-cSA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="azz-0s-qfu">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Phy-O6-xJi"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5h-Zs-N9F">
+                    <rect key="frame" x="0.0" y="607" width="375" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="lAf-XT-vKM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="14"/>
+                    <state key="normal" title="GET STARTED">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="getingStartedAction:" destination="-1" eventType="touchUpInside" id="MuD-o0-9cD"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="em4-sy-bO0">
+                    <rect key="frame" x="15" y="40" width="345" height="547"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="azz-0s-qfu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1Js-2m-HB7"/>
+                <constraint firstItem="H5h-Zs-N9F" firstAttribute="top" secondItem="em4-sy-bO0" secondAttribute="bottom" constant="20" id="AJO-za-bp1"/>
+                <constraint firstAttribute="trailing" secondItem="em4-sy-bO0" secondAttribute="trailing" constant="15" id="Dwo-hi-H7f"/>
+                <constraint firstAttribute="bottom" secondItem="H5h-Zs-N9F" secondAttribute="bottom" constant="20" symbolic="YES" id="F99-5e-21U"/>
+                <constraint firstItem="em4-sy-bO0" firstAttribute="top" secondItem="azz-0s-qfu" secondAttribute="bottom" id="XVk-N3-6UQ"/>
+                <constraint firstItem="azz-0s-qfu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bG0-Kl-Uk0"/>
+                <constraint firstAttribute="trailing" secondItem="H5h-Zs-N9F" secondAttribute="trailing" id="fRU-sX-JXh"/>
+                <constraint firstAttribute="trailing" secondItem="azz-0s-qfu" secondAttribute="trailing" id="gd7-rn-TFD"/>
+                <constraint firstItem="H5h-Zs-N9F" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xrJ-M3-2TB"/>
+                <constraint firstItem="em4-sy-bO0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="zvH-je-My4"/>
+            </constraints>
+            <point key="canvasLocation" x="31.199999999999999" y="85.007496251874073"/>
+        </view>
+    </objects>
+</document>

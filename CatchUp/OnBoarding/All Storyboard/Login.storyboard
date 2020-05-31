@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="47T-it-wXk">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login-->
+        <scene sceneID="Xbq-z8-1cN">
+            <objects>
+                <viewController storyboardIdentifier="Login" id="47T-it-wXk" userLabel="Login" customClass="Login" customModule="CatchUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vXT-fY-4qp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yzj-w8-jOX">
+                                <rect key="frame" x="157" y="120" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="IEX-up-nXU"/>
+                                    <constraint firstAttribute="height" constant="100" id="Nan-ca-XRH"/>
+                                </constraints>
+                                <state key="normal" image="avatar"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="puR-gC-q1v">
+                                <rect key="frame" x="30" y="250" width="354" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="xiS-mR-vNE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYv-CN-gTp">
+                                <rect key="frame" x="30" y="300" width="354" height="36"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="uRH-ze-sxN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginTapped:" destination="47T-it-wXk" eventType="touchUpInside" id="pAB-ZI-lbs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XYv-CN-gTp" firstAttribute="top" secondItem="puR-gC-q1v" secondAttribute="bottom" constant="20" id="2Fb-R3-O9H"/>
+                            <constraint firstItem="qQA-na-Hyu" firstAttribute="trailing" secondItem="XYv-CN-gTp" secondAttribute="trailing" constant="30" id="3ep-hz-HoS"/>
+                            <constraint firstItem="puR-gC-q1v" firstAttribute="leading" secondItem="qQA-na-Hyu" secondAttribute="leading" constant="30" id="aut-YT-MpK"/>
+                            <constraint firstItem="puR-gC-q1v" firstAttribute="top" secondItem="Yzj-w8-jOX" secondAttribute="bottom" constant="30" id="cLc-6H-tIc"/>
+                            <constraint firstItem="XYv-CN-gTp" firstAttribute="leading" secondItem="qQA-na-Hyu" secondAttribute="leading" constant="30" id="jMf-Nh-Wez"/>
+                            <constraint firstItem="qQA-na-Hyu" firstAttribute="trailing" secondItem="puR-gC-q1v" secondAttribute="trailing" constant="30" id="kIb-9s-p92"/>
+                            <constraint firstItem="Yzj-w8-jOX" firstAttribute="top" secondItem="qQA-na-Hyu" secondAttribute="top" constant="76" id="nba-V2-bCY"/>
+                            <constraint firstItem="Yzj-w8-jOX" firstAttribute="centerX" secondItem="vXT-fY-4qp" secondAttribute="centerX" id="ow0-Fr-YH2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qQA-na-Hyu"/>
+                    </view>
+                    <connections>
+                        <outlet property="loignButton" destination="XYv-CN-gTp" id="C8V-gg-itA"/>
+                        <outlet property="nameLabel" destination="puR-gC-q1v" id="CEM-Hu-8SD"/>
+                        <outlet property="profileButton" destination="Yzj-w8-jOX" id="Gt6-Rl-5ef"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KaP-aG-RGJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="176.81159420289856" y="73.660714285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="avatar" width="100" height="100"/>
+    </resources>
+</document>
