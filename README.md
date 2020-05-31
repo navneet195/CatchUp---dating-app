@@ -2,7 +2,7 @@
 
 A iOS CatchUp - dating app is add easily on your project download source code and drag and drop folder.
 
-![[Watch Demo](https://www.youtube.com/watch?v=1DxymzsbjFg)](https://www.youtube.com/watch?v=1DxymzsbjFg/0.jpg)
+![[Watch Demo](https://youtu.be/1DxymzsbjFg?t=5)](https://youtu.be/1DxymzsbjFg?t=5/0.jpg)
 
 # Requirements
 `OS X 10.15.5+`
